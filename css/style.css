@@ -337,8 +337,8 @@ img {
 
 /* ===========MediaQueries============= */
 @media (max-width: 900px) {
-  .container {
-    overflow-x: hidden !important;
+  .container, .container-lg {
+    overflow: hidden !important;
   }
   #strategy .md-header {
     font-size: 20px;
