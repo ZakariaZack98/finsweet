@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ==============common=========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: var(--fnt_primary);
+  color: var(--clr_dark_blue);
+  overflow-x: hidden;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a,
+span {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+.pointer {
+  cursor: pointer;
+}
+.commonLink {
+  color: white;
+}
+.commonLink:hover {
+  color: var(--clr_yellow);
+  transition: var(--trn_delay);
+}
+:root {
+  --fnt_primary: "Poppins", sans-serif;
+  --clr_royal_blue: #2405f2;
+  --clr_dark_blue: #282938;
+  --clr_tint_blue: #1c1e53;
+  --clr_grey: #f4f6fc;
+  --clr_yellow: #fcd980;
+  --clr_accent: #eef4fa;
+  --clr_text_faded: #282938;
+  --border-red: 1px solid red;
+  --trn_delay: ease-in 0.3s;
+  --box_shd: 0 0 20px 20px rgba(0, 0, 0, 0.24);
+}
+/* ===============Typography============ */
+.xxl-header {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 74px;
+}
+.xl-header {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+}
+.lg-header {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+}
+.md-header {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.sm-header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.label-lg {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.label-sm {
+  font-weight: 500;
+}
+.regularText {
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--clr_text_faded);
+}
+/* ==========Navbar=================== */
+.navbar {
+  background-color: var(--clr_tint_blue) !important;
+  color: white;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.customBtnPrimary {
+  border-radius: 41px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 3rem;
+  transition: var(--trn_delay);
+}
+.customBtnPrimary:hover {
+  background-color: var(--clr_yellow) !important;
+  color: var(--clr_tint_blue) !important;
+}
+.--btnMod {
+  margin-left: 100px;
+}
+#navbar .active {
+  position: relative;
+}
+#navbar .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-7px);
+}
+.customNavLink {
+  position: relative;
+}
+.customNavLink:hover::before {
+  width: 100%;
+}
+.customNavLink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-7px);
+  transition: var(--trn_delay);
+}
+/* ============Hero================ */
+#hero {
+  padding: 128px 0;
+}
+/* ==============secondsec=========== */
+#secondSec {
+  padding-bottom: 100px;
+}
+.secondSecTextPart {
+  padding: 80px;
+  background-color: var(--clr_grey);
+}
+/* ============process============== */
+#process {
+  padding-bottom: 50px;
+}
+.processItem__round {
+  height: 24px;
+  width: 24px;
+  background-color: var(--clr_royal_blue);
+  border-radius: 50%;
+  top: -30px;
+  left: -10px;
+  position: relative;
+}
+.processItem__round::after {
+  content: "";
+  position: absolute;
+  width: 15dvw;
+  background-color: transparent;
+  height: 2px;
+  border: 1px dashed var(--clr_royal_blue);
+  left: 40px;
+  top: 12px;
+}
+/* ===============Mission============== */
+#mission {
+  background-color: var(--clr_grey);
+  padding: 128px 0;
+}
+/* ================Benefits============= */
+#benefits {
+  padding: 128px 0;
+}
+.benefitsHeader {
+  max-width: 50%;
+}
+/* ****copied from homepage features** */
+.featureCard i {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--clr_royal_blue);
+}
+.featureCard {
+  height: 100%;
+}
+/* ****copied from homepage features** */
+.--userCount {
+  transform: translateY(-20px);
+}
+/* =============team============== */
+#team {
+  padding: 128px 0;
+  background-color: var(--clr_grey);
+}
+.teamItem {
+  height: 344px;
+  width: 296px;
+}
+.teamItem:hover .memberPicOverlay {
+  opacity: 1;
+}
+.memberPicOverlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient( #2505f217, #2505f262, #2405f2);
+  border-radius: 50%;
+  top: 0;
+  opacity: 0;
+  transition: var(--trn_delay);
+}
+.memberPicOverlaySocial a {
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+.memberPicOverlaySocial {
+  position: absolute;
+  bottom: 20px;
+  left: 33px;
+}
+
+
+
+/* ============footer============== */
+#footer {
+  padding-top: 128px;
+  background-color: var(--clr_tint_blue);
+  color: white;
+}
+#footer .logo img {
+  width: 176px;
+}
+.footerLeftBottom {
+  background-color: var(--clr_yellow);
+  color: var(--clr_dark_blue);
+}
+.footerLeft,
+.footerRight {
+  height: 300px;
+}
+.footerRightSocials {
+  margin-bottom: 120px;
+}
+.footerRightSocials a {
+  color: white;
+  transition: var(--trn_delay);
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+}
+.footerRightSocials a:hover {
+  color: var(--clr_yellow);
+}
+#bottomNav {
+  background-color: white;
+}
+.bottomNavLinks {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bottomNavLinks a {
+  color: var(--clr_dark_blue);
+}
+
+@media (max-width: 900px) {
+  .container,
+  .container-lg {
+    overflow: hidden !important;
+  }
+  .xxl-header {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .processItem__round {
+  height: 24px;
+  width: 24px;
+  background-color: var(--clr_royal_blue);
+  border-radius: 50%;
+  top: 30px;
+  left: -35px;
+  position: relative;
+  z-index: 10;
+}
+.processItem__round::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: transparent;
+  height: 10dvh;
+  border: 1px dashed var;
+  left: 12px;
+  top: 20px;
+  z-index: 0;
+  }
+  .secondSecPicPart__img img{
+    height: 30dvh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .benefitsHeader {
+  max-width: 95%;
+  }
+  .benefitsFooter {
+    padding-top: 100px;
+  }
+}
