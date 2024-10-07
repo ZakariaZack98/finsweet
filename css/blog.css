@@ -245,4 +245,7 @@ img {
     font-size: 40px;
     line-height: 100%;
   }
+  .blogContent img{
+    width: 100%;
+  }
 }

@@ -353,8 +353,17 @@ img {
   #strategy .md-header {
     font-size: 20px;
   }
+  .xxl-header {
+    font-size: 35px;
+    line-height: 140%;
+  }
   .xl-header {
     font-size: 36px;
+    line-height: 40px;
+  }
+  .md-header {
+    font-size: 20px;
+    line-height: 25px;
   }
   #features .xl-header {
     width: 90%;

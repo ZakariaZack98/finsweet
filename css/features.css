@@ -248,5 +248,9 @@ img {
     font-size: 40px;
     line-height: 100%;
   }
+  .lg-header {
+    font-size: 25px;
+    line-height: 30px;
+  }
 
 }
