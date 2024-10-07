@@ -24,7 +24,7 @@ span {
 img {
   vertical-align: middle;
 }
-.pointer{
+.pointer {
   cursor: pointer;
 }
 .commonLink {
@@ -88,76 +88,78 @@ img {
 }
 /* ==========Navbar=================== */
 .navbar {
-    background-color: var(--clr_tint_blue) !important;
-    color: white;
+  background-color: var(--clr_tint_blue) !important;
+  color: white;
 }
 .navbar-toggler-icon {
-    filter: invert(1);
+  filter: invert(1);
 }
 .customBtnPrimary {
-    border-radius: 41px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 1rem 3rem;
-    transition: var(--trn_delay);
+  border-radius: 41px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 3rem;
+  transition: var(--trn_delay);
 }
 .customBtnPrimary:hover {
-    background-color: var(--clr_yellow) !important;
-    color: var(--clr_tint_blue) !important;
+  background-color: var(--clr_yellow) !important;
+  color: var(--clr_tint_blue) !important;
 }
 .--btnMod {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 #navbar .active {
-    position: relative;
+  position: relative;
 }
 #navbar .active::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transform: translateY(-7px);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-7px);
 }
 .customNavLink {
-    position: relative;
+  position: relative;
 }
-.customNavLink:hover::before{
-    width: 100%;
-
+.customNavLink:hover::before {
+  width: 100%;
 }
 .customNavLink::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transform: translateY(-7px);
-    transition: var(--trn_delay);
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-7px);
+  transition: var(--trn_delay);
+}
+.--linkMod:hover {
+  color: var(--clr_tint_blue) !important;
 }
 /* ===============Banner============== */
 #banner {
-    background-color: var(--clr_tint_blue);
-    padding: 128px 0;
-    color: white;
+  background-color: var(--clr_tint_blue);
+  padding: 128px 0;
+  color: white;
 }
 .--btnMod3:hover {
-    background-color: transparent !important;
-    color: rgba(255, 255, 255, 0.562) !important;
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.562) !important;
 }
 /* ===========Strategy========== */
 #strategy {
-    padding: 128px 0;
-    background-color: var(--clr_grey);
+  padding: 128px 0;
+  background-color: var(--clr_grey);
 }
 .strategyDivider {
-    column-gap: 142px !important;
+  column-gap: 142px !important;
 }
 /* ==========Projects================ */
 #project {
   padding: 128px 0;
 }
 .projectLeftOverlay {
-  background-image: linear-gradient(45deg, #1C1E53, rgba(28, 30, 83, 0.418));
+  background-image: linear-gradient(45deg, #1c1e53, rgba(28, 30, 83, 0.418));
   width: 40%;
   color: white;
   transform: translateX(-100%);
@@ -169,17 +171,20 @@ img {
   opacity: 1;
 }
 .projectRightPartItemOverlay {
-  background-image: linear-gradient(45deg, #1C1E53, rgba(28, 30, 83, 0.418));
+  background-image: linear-gradient(45deg, #1c1e53, rgba(28, 30, 83, 0.418));
   color: white;
   transition: 0.5s linear;
   opacity: 0;
   transition: var(--trn_delay);
 }
-.projectRightPartItem:hover .projectRightPartItemOverlay{
+.projectRightPartItem:hover .projectRightPartItemOverlay {
   opacity: 1;
 }
+.--linkMod2:hover {
+  color: var(--clr_yellow) !important;
+}
 /* ============Features=============== */
-#features{
+#features {
   background-color: var(--clr_grey);
   padding: 128px 0;
 }
@@ -209,7 +214,10 @@ img {
 #faq .header-sm {
   color: var(--clr_royal_blue);
 }
-.accordion-button:focus { box-shadow: none; border-color: rgba(0,0,0,.125); }
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
 /* ===============Inquiry============ */
 #inquiry {
   padding: 128px 0;
@@ -242,8 +250,8 @@ img {
   padding: 96px;
 }
 .form-floating > label::after {
-    background-color: transparent !important;
-    color: white !important;
+  background-color: transparent !important;
+  color: white !important;
 }
 .formBtn {
   color: var(--clr_tint_blue);
@@ -309,7 +317,8 @@ img {
   background-color: var(--clr_yellow);
   color: var(--clr_dark_blue);
 }
-.footerLeft, .footerRight {
+.footerLeft,
+.footerRight {
   height: 300px;
 }
 .footerRightSocials {
@@ -337,20 +346,21 @@ img {
 
 /* ===========MediaQueries============= */
 @media (max-width: 900px) {
-  .container, .container-lg {
+  .container,
+  .container-lg {
     overflow: hidden !important;
   }
   #strategy .md-header {
     font-size: 20px;
-  };
+  }
   .xl-header {
     font-size: 36px;
   }
   #features .xl-header {
-  width: 90%;
+    width: 90%;
   }
   .footerRightSocials {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .blogContent {
     padding: 0;

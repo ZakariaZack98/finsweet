@@ -35,7 +35,7 @@ img {
   transition: var(--trn_delay);
 }
 .--linkMod:hover {
-    color: var(--clr_tint_blue) !important;
+  color: var(--clr_tint_blue) !important;
 }
 :root {
   --fnt_primary: "Poppins", sans-serif;
@@ -136,99 +136,32 @@ img {
   transform: translateY(-7px);
   transition: var(--trn_delay);
 }
-/* ============Hero================ */
-#hero {
+/* =============contact============= */
+#contact {
   padding: 128px 0;
 }
-/* ==============secondsec=========== */
-#secondSec {
-  padding-bottom: 100px;
-}
-.secondSecTextPart {
-  padding: 80px;
-  background-color: var(--clr_grey);
-}
-/* ============process============== */
-#process {
-  padding-bottom: 50px;
-}
-.processItem__round {
-  height: 24px;
-  width: 24px;
-  background-color: var(--clr_royal_blue);
-  border-radius: 50%;
-  top: -30px;
-  left: -10px;
-  position: relative;
-}
-.processItem__round::after {
-  content: "";
-  position: absolute;
-  width: 15dvw;
-  background-color: transparent;
-  height: 2px;
-  border: 1px dashed var(--clr_royal_blue);
-  left: 40px;
-  top: 12px;
-}
-/* ===============Mission============== */
-#mission {
-  background-color: var(--clr_grey);
-  padding: 128px 0;
-}
-/* ================Benefits============= */
-#benefits {
-  padding: 128px 0;
-}
-.benefitsHeader {
+.contactHeader__summery {
   max-width: 50%;
 }
-/* ****copied from homepage features** */
-.featureCard i {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: var(--clr_royal_blue);
-}
-.featureCard {
-  height: 100%;
-}
-/* ****copied from homepage features** */
-.--userCount {
-  transform: translateY(-20px);
-}
-/* =============team============== */
-#team {
-  padding: 128px 0;
+.contactForm {
   background-color: var(--clr_grey);
+  padding: 55px 77px;
 }
-.teamItem {
-  height: 344px;
-  width: 296px;
+.contactWrapper {
+  max-width: 80%;
+  margin: 0 auto;
 }
-.teamItem:hover .memberPicOverlay {
-  opacity: 1;
+.contactBtn {
+  border-radius: 41px;
+  background-color: var(--clr_dark_blue);
+  color: white;
 }
-.memberPicOverlay {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient( #2505f217, #2505f262, #2405f2);
-  border-radius: 50%;
-  top: 0;
-  opacity: 0;
-  transition: var(--trn_delay);
+input {
+  height: 64px !important;
+  background-color: var(--clr_grey) !important;
+  border: 3px solid #dbdbdb !important;
+  border-radius: 8px !important;
 }
-.memberPicOverlaySocial a {
-  margin: 0 5px;
-  font-size: 1.2rem;
-}
-.memberPicOverlaySocial {
-  position: absolute;
-  bottom: 20px;
-  left: 33px;
-}
-
-
-
 /* ============footer============== */
 #footer {
   padding-top: 128px;
@@ -269,45 +202,28 @@ img {
   color: var(--clr_dark_blue);
 }
 
+/* ===========MediaQueries============= */
 @media (max-width: 900px) {
   .container,
   .container-lg {
     overflow: hidden !important;
   }
+  .xl-header {
+    font-size: 30px;
+    line-height: 100%;
+  }
   .xxl-header {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 100%;
   }
-  .processItem__round {
-  height: 24px;
-  width: 24px;
-  background-color: var(--clr_royal_blue);
-  border-radius: 50%;
-  top: 30px;
-  left: -35px;
-  position: relative;
-  z-index: 10;
-}
-.processItem__round::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  background-color: transparent;
-  height: 10dvh;
-  border: 1px dashed var;
-  left: 12px;
-  top: 20px;
-  z-index: 0;
+  .contactHeader__summery {
+    max-width: 90%;
   }
-  .secondSecPicPart__img img{
-    height: 30dvh;
-    object-fit: cover;
-    object-position: center;
+  .contactWrapper {
+    max-width: 100%;
+    margin: 0 auto;
   }
-  .benefitsHeader {
-  max-width: 95%;
-  }
-  .benefitsFooter {
-    padding-top: 100px;
+  .contactForm {
+    padding: 25px 47px;
   }
 }

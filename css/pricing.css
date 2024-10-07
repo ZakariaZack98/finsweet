@@ -7,42 +7,37 @@
   box-sizing: border-box;
   outline: none;
 }
-
 body {
   font-family: var(--fnt_primary);
   color: var(--clr_dark_blue);
   overflow-x: hidden;
 }
-
 ol,
 ul,
 li {
   list-style: none;
 }
-
 a,
 span {
   text-decoration: none;
   display: inline-block;
 }
-
 img {
   vertical-align: middle;
 }
-
 .pointer {
   cursor: pointer;
 }
-
 .commonLink {
   color: white;
 }
-
 .commonLink:hover {
   color: var(--clr_yellow);
   transition: var(--trn_delay);
 }
-
+.--linkMod:hover {
+  color: var(--clr_tint_blue) !important;
+}
 :root {
   --fnt_primary: "Poppins", sans-serif;
   --clr_royal_blue: #2405f2;
@@ -163,10 +158,10 @@ img {
 
 /* =============Plan============== */
 #plans {
-    padding: 128px 0;
+  padding: 128px 0;
 }
 .plansCardWrapper {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .planCard {
   width: 406px;
@@ -176,22 +171,21 @@ img {
   transition: 0.4s ease-in !important;
 }
 .planCard:hover {
-    scale: 1.05;
-    background-color: var(--clr_tint_blue);
-    color: white;
-
+  scale: 1.05;
+  background-color: var(--clr_tint_blue);
+  color: white;
 }
 .planCardOverlay {
-    width: 1151px;
-    height: 1151px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.062);
-    top: -605px;
-    left: -362px;
+  width: 1151px;
+  height: 1151px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.062);
+  top: -595px;
+  left: -380px;
 }
 .planCard:hover .buyBtn {
-    background-color: var(--clr_yellow);
-    color: var(--clr_dark_blue);
+  background-color: var(--clr_yellow);
+  color: var(--clr_dark_blue);
 }
 .plansHeader {
   max-width: 70%;
@@ -203,16 +197,16 @@ img {
 .planCardFeatures ul li:before {
   content: "▶";
   position: absolute;
-  color: #97DAAD;
+  color: #97daad;
   font-size: 1.5rem;
   left: -25px;
   top: -7px;
 }
 .buyBtn {
-    border-radius: 41px;
-    background-color: var(--clr_dark_blue);
-    color: white;
-    transform: translateX(32%);
+  border-radius: 41px;
+  background-color: var(--clr_dark_blue);
+  color: white;
+  transform: translateX(32%);
 }
 /* ==============faq================== */
 #faq {
@@ -225,7 +219,10 @@ img {
 #faq .header-sm {
   color: var(--clr_royal_blue);
 }
-.accordion-button:focus { box-shadow: none; border-color: rgba(0,0,0,.125); }
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
 /* ============footer============== */
 #footer {
   padding-top: 128px;
@@ -288,5 +285,8 @@ img {
 
   .plansHeader {
     max-width: 95%;
+  }
+  .planCard {
+    width: 390px;
   }
 }

@@ -24,7 +24,7 @@ span {
 img {
   vertical-align: middle;
 }
-.pointer {
+.pointer{
   cursor: pointer;
 }
 .commonLink {
@@ -91,92 +91,72 @@ img {
 }
 /* ==========Navbar=================== */
 .navbar {
-  background-color: var(--clr_tint_blue) !important;
-  color: white;
+    background-color: var(--clr_tint_blue) !important;
+    color: white;
 }
 .navbar-toggler-icon {
-  filter: invert(1);
+    filter: invert(1);
 }
 .customBtnPrimary {
-  border-radius: 41px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  padding: 1rem 3rem;
-  transition: var(--trn_delay);
+    border-radius: 41px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 3rem;
+    transition: var(--trn_delay);
 }
 .customBtnPrimary:hover {
-  background-color: var(--clr_yellow) !important;
-  color: var(--clr_tint_blue) !important;
+    background-color: var(--clr_yellow) !important;
+    color: var(--clr_tint_blue) !important;
 }
 .--btnMod {
-  margin-left: 100px;
+    margin-left: 100px;
 }
 #navbar .active {
-  position: relative;
+    position: relative;
 }
 #navbar .active::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  transform: translateY(-7px);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-7px);
 }
 .customNavLink {
-  position: relative;
+    position: relative;
 }
-.customNavLink:hover::before {
-  width: 100%;
+.customNavLink:hover::before{
+    width: 100%;
+
 }
 .customNavLink::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transform: translateY(-7px);
-  transition: var(--trn_delay);
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-7px);
+    transition: var(--trn_delay);
 }
-/* ============Hero================ */
-#hero {
-  padding: 128px 0;
+/* ===============Banner============== */
+#banner {
+    background-color: var(--clr_tint_blue);
+    padding: 128px 0;
+    color: white;
 }
-/* ==============secondsec=========== */
-#secondSec {
-  padding-bottom: 100px;
+.--btnMod3:hover {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.562) !important;
 }
-.secondSecTextPart {
-  padding: 80px;
-  background-color: var(--clr_grey);
+.btn:hover .--linkMod:hover {
+    color: var(--clr_tint_blue) !important;
 }
-/* ============process============== */
-#process {
-  padding-bottom: 50px;
+/* ================benefits=============== */
+.--userCount {
+  transform: translateY(-20px);
 }
-.processItem__round {
-  height: 24px;
-  width: 24px;
-  background-color: var(--clr_royal_blue);
-  border-radius: 50%;
-  top: -30px;
-  left: -10px;
-  position: relative;
+.logosWrapper {
+    margin-top: 40px;
 }
-.processItem__round::after {
-  content: "";
-  position: absolute;
-  width: 15dvw;
-  background-color: transparent;
-  height: 2px;
-  border: 1px dashed var(--clr_royal_blue);
-  left: 40px;
-  top: 12px;
-}
-/* ===============Mission============== */
-#mission {
-  background-color: var(--clr_grey);
-  padding: 128px 0;
-}
-/* ================Benefits============= */
 #benefits {
   padding: 128px 0;
 }
@@ -193,42 +173,29 @@ img {
   height: 100%;
 }
 /* ****copied from homepage features** */
-.--userCount {
-  transform: translateY(-20px);
+/* ============featuresec============== */
+#featureSec1, #featureSec2, #featureSec3, #featureSec4 {
+    padding: 128px 0;
 }
-/* =============team============== */
-#team {
+#featureSec2 {
+    background-color: var(--clr_grey);
+}
+#featureSec4 {
+    background-color: rgba(252, 217, 128, 0.116);
+}
+/* ==============faq================== */
+#faq {
   padding: 128px 0;
-  background-color: var(--clr_grey);
 }
-.teamItem {
-  height: 344px;
-  width: 296px;
+.customAccordItem {
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.274);
 }
-.teamItem:hover .memberPicOverlay {
-  opacity: 1;
+#faq .header-sm {
+  color: var(--clr_royal_blue);
 }
-.memberPicOverlay {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient( #2505f217, #2505f262, #2405f2);
-  border-radius: 50%;
-  top: 0;
-  opacity: 0;
-  transition: var(--trn_delay);
+.accordion-button:focus { box-shadow: none; border-color: rgba(0,0,0,.125);
 }
-.memberPicOverlaySocial a {
-  margin: 0 5px;
-  font-size: 1.2rem;
-}
-.memberPicOverlaySocial {
-  position: absolute;
-  bottom: 20px;
-  left: 33px;
-}
-
-
-
 /* ============footer============== */
 #footer {
   padding-top: 128px;
@@ -242,8 +209,7 @@ img {
   background-color: var(--clr_yellow);
   color: var(--clr_dark_blue);
 }
-.footerLeft,
-.footerRight {
+.footerLeft, .footerRight {
   height: 300px;
 }
 .footerRightSocials {
@@ -269,45 +235,18 @@ img {
   color: var(--clr_dark_blue);
 }
 
+/* ===========MediaQueries============= */
 @media (max-width: 900px) {
-  .container,
-  .container-lg {
+  .container, .container-lg {
     overflow: hidden !important;
   }
+  .xl-header {
+    font-size: 30px;
+    line-height: 100%;
+  }
   .xxl-header {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 100%;
   }
-  .processItem__round {
-  height: 24px;
-  width: 24px;
-  background-color: var(--clr_royal_blue);
-  border-radius: 50%;
-  top: 30px;
-  left: -35px;
-  position: relative;
-  z-index: 10;
-}
-.processItem__round::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  background-color: transparent;
-  height: 10dvh;
-  border: 1px dashed var;
-  left: 12px;
-  top: 20px;
-  z-index: 0;
-  }
-  .secondSecPicPart__img img{
-    height: 30dvh;
-    object-fit: cover;
-    object-position: center;
-  }
-  .benefitsHeader {
-  max-width: 95%;
-  }
-  .benefitsFooter {
-    padding-top: 100px;
-  }
+
 }
